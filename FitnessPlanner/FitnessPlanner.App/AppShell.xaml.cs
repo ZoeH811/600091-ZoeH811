@@ -8,9 +8,7 @@ namespace FitnessPlanner.App
         {
             InitializeComponent();
 
-            Routing.RegisterRoute(
-                "planner",
-                typeof(PlannerPage));
+            Routing.RegisterRoute("planner", typeof(PlannerPage));
         }
     }
 }
