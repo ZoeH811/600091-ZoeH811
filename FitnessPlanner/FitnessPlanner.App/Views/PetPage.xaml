@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FitnessPlanner.App.Views.PetPage"
+    Title="Your Companion">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="20">
+
+            <Label
+                Text="Your Adventure Companion"
+                FontSize="28"
+                FontAttributes="Bold" />
+
+            <Border
+                Stroke="#D0D0D0"
+                Padding="20">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <Label
+                        Text="Pet Preview"
+                        FontSize="22"
+                        HorizontalOptions="Center"
+                        HeightRequest="150"
+                        VerticalTextAlignment="Center" />
+
+                    <Label
+                        Text="Level 1"
+                        FontSize="18"
+                        FontAttributes="Bold" />
+
+                    <ProgressBar
+                        Progress="0"
+                        ProgressColor="Green" />
+
+                    <Label
+                        Text="Mood: Happy"
+                        FontSize="16" />
+
+                    <Button
+                        Text="View Inventory" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

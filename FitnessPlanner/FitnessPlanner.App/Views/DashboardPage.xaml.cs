@@ -14,6 +14,11 @@ public partial class DashboardPage : ContentPage
 
     private async void OnPlannerTapped(object sender, TappedEventArgs e)
     {
-        await Shell.Current.GoToAsync("planner");
+        await Shell.Current.GoToAsync("//planner");
+    }
+
+    private async void OnDiaryTapped(object sender, TappedEventArgs e)
+    {
+        await Shell.Current.GoToAsync("//diary");
     }
 }

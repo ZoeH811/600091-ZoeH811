@@ -7,9 +7,31 @@
     xmlns:views="clr-namespace:FitnessPlanner.App.Views"
     Title="FitnessPlanner.App">
 
-    <ShellContent
-        Title="Dashboard"
-        Route="dashboard"
-        ContentTemplate="{DataTemplate views:DashboardPage}" />
+    <TabBar>
+
+        <ShellContent
+            Title="Home"
+            Route="dashboard"
+            ContentTemplate="{DataTemplate views:DashboardPage}" />
+
+        <ShellContent
+            Title="Planner"
+            Route="planner"
+            ContentTemplate="{DataTemplate views:PlannerPage}" />
+
+        <ShellContent
+            Title="Diary"
+            Route="diary"
+            ContentTemplate="{DataTemplate views:DiaryPage}" />
+
+        <ShellContent
+            Title="Pet"
+            Route="pet"
+            ContentTemplate="{DataTemplate views:PetPage}" />
+
+
+    </TabBar>
+
+    
 
 </Shell>

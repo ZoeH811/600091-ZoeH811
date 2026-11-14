@@ -79,7 +79,7 @@
                 </VerticalStackLayout>
             </Border>
 
-            <!--Quick Acess-->
+            <!--Quick Access-->
             <Label
             Text="Quick Access"
             FontSize="20"
@@ -117,6 +117,11 @@
                 Grid.Column="1"
                 Stroke="#D0D0D0"
                 Padding="15">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                        Tapped="OnDiaryTapped" />
+                    </Border.GestureRecognizers>
 
                     <VerticalStackLayout Spacing="8">
                         <Label
