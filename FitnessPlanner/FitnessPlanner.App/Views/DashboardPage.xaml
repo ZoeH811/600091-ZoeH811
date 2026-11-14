@@ -44,9 +44,17 @@
                     VerticalOptions="Center"
                     HeightRequest="100" />
 
-                    <Label
-                    Text="Level 1 - 0/100 XP"
-                    FontSize="14" />
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Level" />
+                        <Label Text="{Binding PetLevel}" />
+                        <Label Text="-" />
+                        <Label Text="{Binding PetExperience}" />
+                        <Label Text="/100 XP" />
+                    </HorizontalStackLayout>
+
+                    <Button
+                    Text="Test: Gain 10 XP"
+                    Command="{Binding GainExperienceCommand}" />
 
                     <ProgressBar
                     Progress="0"
@@ -69,7 +77,7 @@
                     FontAttributes="Bold" />
 
                     <Label
-                    Text="No Workouts Scheduled"
+                    Text="{Binding WorkoutStatus}"
                     FontSize="14" />
 
                     <Button
