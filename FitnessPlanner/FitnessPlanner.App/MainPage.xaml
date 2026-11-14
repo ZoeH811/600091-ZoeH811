@@ -90,17 +90,23 @@
                     Stroke="#D0D0D0"
                     Padding="15">
 
-                    <VerticalStackLayout Spacing="8">
-                        <Label
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnPlannerTapped"/>
+                    </Border.GestureRecognizers>
+
+                        <VerticalStackLayout Spacing="8">
+                            <Label
                             Text="Workout Planner"
                             FontAttributes="Bold"
                             HorizontalOptions="Center" />
 
-                        <Label
+                            <Label
                             Text="Plan your workouts"
                             FontSize="12"
                             HorizontalOptions="Center" />
-                    </VerticalStackLayout>
+                        </VerticalStackLayout>
+           
 
                 </Border>
 

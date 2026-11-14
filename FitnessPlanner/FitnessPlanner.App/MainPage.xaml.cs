@@ -13,5 +13,10 @@
         {
             await DisplayAlertAsync("Workout Adventure", "Your workout adventure will begin here!", "OK");
         }
+
+        private async void OnPlannerTapped(object sender, TappedEventArgs e)
+        {
+            await Shell.Current.GoToAsync("planner");
+        }
     }
 }
