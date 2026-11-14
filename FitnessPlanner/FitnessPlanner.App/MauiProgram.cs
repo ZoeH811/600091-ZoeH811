@@ -3,6 +3,7 @@ using FitnessPlanner.App.ViewModels;
 using FitnessPlanner.App.Views;
 using FitnessPlanner.App.Services;
 using FitnessPlanner.App.Services.Interfaces;
+using FitnessPlanner.App.Data;
 
 namespace FitnessPlanner.App
 {
@@ -30,6 +31,8 @@ namespace FitnessPlanner.App
 
             builder.Services.AddTransient<DiaryViewModel>();
             builder.Services.AddTransient<DiaryPage>();
+
+            builder.Services.AddSingleton<AppDatabase>();
 
             return builder.Build();
         }

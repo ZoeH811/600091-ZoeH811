@@ -1,7 +1,10 @@
-﻿namespace FitnessPlanner.App.Models;
+﻿using SQLite;
+
+namespace FitnessPlanner.App.Models;
 
 public class Activity
 {
+    [PrimaryKey, AutoIncrement]
     public int Id { get; set; }
 
     public string Name { get; set; } = string.Empty;
