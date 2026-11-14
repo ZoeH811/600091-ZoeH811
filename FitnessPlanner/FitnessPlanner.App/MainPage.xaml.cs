@@ -20,5 +20,10 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void OnStartWorkoutClicked(object sender, EventArgs e)
+        {
+            await DisplayAlertAsync("Workout Adventure", "Your workout adventure will begin here!", "OK");
+        }
     }
 }
