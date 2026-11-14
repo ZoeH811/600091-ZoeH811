@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using FitnessPlanner.App.ViewModels;
 using FitnessPlanner.App.Views;
+using FitnessPlanner.App.Services;
+using FitnessPlanner.App.Services.Interfaces;
 
 namespace FitnessPlanner.App
 {
@@ -23,6 +25,11 @@ namespace FitnessPlanner.App
 
             builder.Services.AddTransient<DashboardViewModel>();
             builder.Services.AddTransient<DashboardPage>();
+
+            builder.Services.AddSingleton<IActivityService, ActivityService>(); //Temporary in-memory activity data
+
+            builder.Services.AddTransient<DiaryViewModel>();
+            builder.Services.AddTransient<DiaryPage>();
 
             return builder.Build();
         }

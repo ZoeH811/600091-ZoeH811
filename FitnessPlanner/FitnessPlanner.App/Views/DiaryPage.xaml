@@ -6,43 +6,72 @@
     x:Class="FitnessPlanner.App.Views.DiaryPage"
     Title="Activity Diary">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="20"
-            Spacing="20">
 
-            <Label
-                Text="Activity Diary"
-                FontSize="28"
-                FontAttributes="Bold" />
+    <Grid Padding="20"
+      RowDefinitions="Auto,Auto,*"
+      RowSpacing="15">
 
-            <Label
-                Text="Record and review your completed activities."
-                FontSize="16"
-                TextColor="Gray" />
+        <Label
+        Grid.Row="0"
+        Text="Activity Diary"
+        FontSize="28"
+        FontAttributes="Bold" />
 
-            <Border
-                Stroke="#D0D0D0"
-                Padding="20">
+        <Button
+        Grid.Row="1"
+        Text="Add Test Activity"
+        Command="{Binding AddTestActivityCommand}" />
 
-                <VerticalStackLayout Spacing="12">
+        <CollectionView
+        Grid.Row="2"
+        ItemsSource="{Binding Activities}">
 
-                    <Label
-                        Text="Your Activities"
-                        FontSize="20"
-                        FontAttributes="Bold" />
+            <CollectionView.EmptyView>
+                <Label
+                Text="No activities recorded yet."
+                HorizontalOptions="Center"
+                Margin="0,30" />
+            </CollectionView.EmptyView>
 
-                    <Label
-                        Text="No activities recorded yet." />
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
 
-                    <Button
-                        Text="Record Activity" />
+                    <Border
+                    Stroke="#D0D0D0"
+                    StrokeThickness="1"
+                    Padding="15"
+                    Margin="0,5">
 
-                </VerticalStackLayout>
+                        <VerticalStackLayout Spacing="5">
 
-            </Border>
+                            <Label
+                            Text="{Binding Name}"
+                            FontSize="18"
+                            FontAttributes="Bold" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+                            <Label
+                            Text="{Binding ActivityType}"
+                            FontSize="14" />
+
+                            <Label
+                            Text="{Binding DurationMinutes,
+                                   StringFormat='Duration: {0} minutes'}"
+                            FontSize="14" />
+
+                            <Label
+                            Text="{Binding Date,
+                                   StringFormat='Date: {0:dd MMM yyyy}'}"
+                            FontSize="12" />
+
+                        </VerticalStackLayout>
+                    </Border>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
 
 </ContentPage>
