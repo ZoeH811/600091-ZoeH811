@@ -75,6 +75,55 @@
 
                 </VerticalStackLayout>
             </Border>
+            
+            <!--Quick Acess-->
+            <Label
+                Text="Quick Access"
+                FontSize="20"
+                FontAttributes="Bold" />
+
+            <Grid ColumnDefinitions="*,*"
+                ColumnSpacing="12">
+
+                <Border
+                    Grid.Column="0"
+                    Stroke="#D0D0D0"
+                    Padding="15">
+
+                    <VerticalStackLayout Spacing="8">
+                        <Label
+                            Text="Workout Planner"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center" />
+
+                        <Label
+                            Text="Plan your workouts"
+                            FontSize="12"
+                            HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <Border
+                    Grid.Column="1"
+                    Stroke="#D0D0D0"
+                    Padding="15">
+
+                    <VerticalStackLayout Spacing="8">
+                        <Label
+                            Text="Activity Diary"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center" />
+
+                        <Label
+                            Text="Track your progress"
+                            FontSize="12"
+                            HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+
+                </Border>
+
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>
