@@ -4,11 +4,11 @@ namespace FitnessPlanner.App.Views;
 
 public partial class DashboardPage : ContentPage
 {
-	public DashboardPage()
+	public DashboardPage(DashboardViewModel viewModel)
 	{
 		InitializeComponent();
 
-        BindingContext = new DashboardViewModel();
+        BindingContext = viewModel;
     }
 
     private async void OnStartWorkoutClicked(object sender, EventArgs e)

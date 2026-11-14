@@ -12,7 +12,7 @@
             Spacing="20">
 
             <Label
-                Text="Your Adventure Companion"
+                Text="Your Adventure Companion TEST"
                 FontSize="28"
                 FontAttributes="Bold" />
 

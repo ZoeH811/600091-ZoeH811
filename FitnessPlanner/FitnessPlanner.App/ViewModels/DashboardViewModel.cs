@@ -9,10 +9,13 @@ public partial class DashboardViewModel : ObservableObject
     private int petLevel = 1;
 
     [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(ExperienceProgress))]
     private int petExperience = 0;
 
     [ObservableProperty]
     private string workoutStatus = "No workout scheduled";
+
+    public double ExperienceProgress => PetExperience / 100.0;
 
 
     [RelayCommand]
@@ -25,6 +28,7 @@ public partial class DashboardViewModel : ObservableObject
             PetExperience -= 100;
             PetLevel++;
         }
+
     }
 
 }

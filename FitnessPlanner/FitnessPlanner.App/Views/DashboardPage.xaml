@@ -35,7 +35,8 @@
                     <Label
                     Text="Your adventure companion"
                     FontSize="20"
-                    FontAttributes="Bold" />
+                    FontAttributes="Bold"
+                    TextColor="Black" />
 
                     <Label
                     Text="Pet Preview"
@@ -53,11 +54,15 @@
                     </HorizontalStackLayout>
 
                     <Button
-                    Text="Test: Gain 10 XP"
-                    Command="{Binding GainExperienceCommand}" />
+                        Text="+10 XP Test"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        HeightRequest="60"
+                        HorizontalOptions="Fill"
+                        Command="{Binding GainExperienceCommand}" />
 
                     <ProgressBar
-                    Progress="0"
+                    Progress="{Binding ExperienceProgress}"
                     ProgressColor="Green" />
                 </VerticalStackLayout>
 

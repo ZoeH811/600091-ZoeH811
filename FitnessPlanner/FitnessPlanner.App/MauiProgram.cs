@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using FitnessPlanner.App.ViewModels;
+using FitnessPlanner.App.Views;
 
 namespace FitnessPlanner.App
 {
@@ -18,6 +20,9 @@ namespace FitnessPlanner.App
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddTransient<DashboardViewModel>();
+            builder.Services.AddTransient<DashboardPage>();
 
             return builder.Build();
         }
