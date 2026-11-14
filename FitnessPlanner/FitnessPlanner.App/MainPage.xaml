@@ -14,7 +14,7 @@
                 SemanticProperties.Description="dot net bot in a submarine number ten" />
 
             <Label
-                Text="Hello, World!"
+                Text="Fitness Planner and Tracker"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
@@ -23,6 +23,11 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Label
+                Text="Your personal fitness journey starts here."
+                FontSize="16"
+                HorizontalOptions="Center" />
 
             <Button
                 x:Name="CounterBtn"
