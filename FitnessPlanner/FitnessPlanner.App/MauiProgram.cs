@@ -36,6 +36,7 @@ namespace FitnessPlanner.App
 
             builder.Services.AddSingleton<AppDatabase>();
             builder.Services.AddSingleton<IUserProfileRepository, SQLiteUserProfileRepository>();
+            builder.Services.AddTransient<IUserProfileService, UserProfileService>();
 
             return builder.Build();
         }
