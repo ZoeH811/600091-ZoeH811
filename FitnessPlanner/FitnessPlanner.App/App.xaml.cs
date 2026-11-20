@@ -1,12 +1,13 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using FitnessPlanner.App.Data;
+﻿using FitnessPlanner.App.Data;
 using System.Diagnostics;
+
 
 namespace FitnessPlanner.App
 {
     public partial class App : Application
     {
         private readonly AppDatabase appDatabase;
+
         public App(AppDatabase appDatabase)
         {
             InitializeComponent();
@@ -49,5 +50,6 @@ namespace FitnessPlanner.App
         );
             }
         }
+
     }
 }

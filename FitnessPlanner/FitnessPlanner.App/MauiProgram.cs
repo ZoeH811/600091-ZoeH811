@@ -4,6 +4,8 @@ using FitnessPlanner.App.Views;
 using FitnessPlanner.App.Services;
 using FitnessPlanner.App.Services.Interfaces;
 using FitnessPlanner.App.Data;
+using FitnessPlanner.App.Data.Interfaces;
+using FitnessPlanner.App.Data.Repositories;
 
 namespace FitnessPlanner.App
 {
@@ -33,6 +35,7 @@ namespace FitnessPlanner.App
             builder.Services.AddTransient<DiaryPage>();
 
             builder.Services.AddSingleton<AppDatabase>();
+            builder.Services.AddSingleton<IUserProfileRepository, SQLiteUserProfileRepository>();
 
             return builder.Build();
         }

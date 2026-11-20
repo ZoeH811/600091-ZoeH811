@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="FitnessPlanner.App/FitnessPlanner.App.csproj" />
+  <Project Path="FitnessPlanner.App/FitnessPlanner.App.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
