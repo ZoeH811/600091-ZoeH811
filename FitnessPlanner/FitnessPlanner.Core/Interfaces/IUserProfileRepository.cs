@@ -1,7 +1,7 @@
 ﻿
-using FitnessPlanner.App.Models;
+using FitnessPlanner.Core.Models;
 
-namespace FitnessPlanner.App.Data.Interfaces;
+namespace FitnessPlanner.Core.Interfaces;
 
 public interface IUserProfileRepository
 {

@@ -1,8 +1,7 @@
-﻿using FitnessPlanner.App.Data.Interfaces;
-using FitnessPlanner.App.Models;
-using FitnessPlanner.App.Services.Interfaces;
+﻿using FitnessPlanner.Core.Interfaces;
+using FitnessPlanner.Core.Models;
 
-namespace FitnessPlanner.App.Services;
+namespace FitnessPlanner.Core.Services;
 
 public class UserProfileService : IUserProfileService
 {

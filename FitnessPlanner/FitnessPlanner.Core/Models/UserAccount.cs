@@ -1,5 +1,5 @@
 ﻿
-namespace FitnessPlanner.App.Models;
+namespace FitnessPlanner.Core.Models;
 
 public class UserAccount
 {

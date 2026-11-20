@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using FitnessPlanner.Core.Models;
 using FitnessPlanner.App.Models;
 
 namespace FitnessPlanner.App.Data;

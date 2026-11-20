@@ -2,10 +2,12 @@
 using FitnessPlanner.App.ViewModels;
 using FitnessPlanner.App.Views;
 using FitnessPlanner.App.Services;
-using FitnessPlanner.App.Services.Interfaces;
 using FitnessPlanner.App.Data;
-using FitnessPlanner.App.Data.Interfaces;
+
+using FitnessPlanner.Core.Interfaces;
+using FitnessPlanner.Core.Services;
 using FitnessPlanner.App.Data.Repositories;
+using FitnessPlanner.App.Services.Interfaces;
 
 namespace FitnessPlanner.App
 {

@@ -1,5 +1,5 @@
-﻿using FitnessPlanner.App.Data.Interfaces;
-using FitnessPlanner.App.Models;
+﻿using FitnessPlanner.Core.Interfaces;
+using FitnessPlanner.Core.Models;
 
 namespace FitnessPlanner.App.Data.Repositories;
 

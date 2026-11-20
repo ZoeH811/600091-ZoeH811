@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace FitnessPlanner.App.Models;
+namespace FitnessPlanner.Core.Models;
 
 public class UserProfile
 {
