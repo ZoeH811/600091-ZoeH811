@@ -2,4 +2,5 @@
   <Project Path="FitnessPlanner.App/FitnessPlanner.App.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="FitnessPlanner.Tests/FitnessPlanner.Tests.csproj" Id="72dfe5b9-8305-4838-bfec-58da5dfecca9" />
 </Solution>
